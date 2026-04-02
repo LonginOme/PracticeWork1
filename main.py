@@ -1,5 +1,5 @@
 import re
-#комментарий
+
 def validate_email(email: str) -> bool:
     pattern = r'^[\w\.-]+@[\w\.-]+\.[a-zA-Z]{2,}$'
     return bool(re.match(pattern, email))
